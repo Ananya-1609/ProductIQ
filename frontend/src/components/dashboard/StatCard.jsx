@@ -1,0 +1,2 @@
+import Card from '../common/Card'
+export default function StatCard({ label, value = '—', detail }) { return <Card className="relative overflow-hidden p-5"><span className="absolute right-5 top-5 size-2 rounded-full bg-[#c5e86c]" /><p className="text-sm text-slate-500">{label}</p><p className="mt-4 text-3xl font-semibold text-slate-950">{value}</p>{detail && <p className="mt-2 text-xs text-slate-400">{detail}</p>}</Card> }

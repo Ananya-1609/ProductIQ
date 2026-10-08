@@ -1,0 +1,3 @@
+import { confidenceValue, formatConfidence } from '../../utils/formatConfidence'
+import { useLanguage } from '../../context/useLanguage'
+export default function ConfidenceIndicator({ value }) { const { t } = useLanguage(); const percent = confidenceValue(value); return <div className="min-w-24" aria-label={`${t('common.confidence')} ${formatConfidence(value)}`}><div className="flex items-center justify-between text-xs font-semibold text-slate-500"><span>{t('common.confidence')}</span><span>{formatConfidence(value)}</span></div><div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-teal-600 transition-all" style={{ width: `${percent}%` }} /></div></div> }

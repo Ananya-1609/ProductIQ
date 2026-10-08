@@ -1,0 +1,2 @@
+export function normalizeStatus(status) { const value = String(status || 'UNKNOWN').toUpperCase(); return ['ACCEPT', 'REVIEW', 'UNKNOWN'].includes(value) ? value : 'UNKNOWN' }
+export function displayValue(value, status, t) { if (value === null || value === undefined || value === '') { const unknown = normalizeStatus(status) === 'UNKNOWN'; const key = unknown ? 'common.notVisible' : 'common.notAvailable'; return t ? t(key) : (unknown ? 'Not visible' : 'Not available') } return Array.isArray(value) ? value.join(', ') : String(value) }

@@ -1,0 +1,1 @@
+export default function Card({ children, className = '', ...props }) { return <section className={`rounded-2xl border border-[#dfe6df] bg-white shadow-[0_8px_30px_rgba(23,34,30,0.05)] ${className}`} {...props}>{children}</section> }

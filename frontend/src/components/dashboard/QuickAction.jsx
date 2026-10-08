@@ -1,0 +1,3 @@
+import { ArrowUpRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+export default function QuickAction({ to, icon: Icon, title, description }) { return <Link to={to} className="group flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:border-teal-300"><span className="grid size-10 place-items-center rounded-xl bg-teal-50 text-teal-700"><Icon size={18} /></span><span className="min-w-0 flex-1"><strong className="block text-sm text-slate-800">{title}</strong><small className="mt-1 block text-xs text-slate-500">{description}</small></span><ArrowUpRight size={16} className="text-slate-300 transition group-hover:text-teal-700" /></Link> }

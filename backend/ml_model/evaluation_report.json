@@ -1,0 +1,293 @@
+{
+  "model": "MobileNetV2",
+  "dataset": "Myntra",
+  "dataset_split": "test",
+  "evaluated_at": "2026-09-25T19:03:14.348513+00:00",
+  "image_size": [
+    224,
+    224
+  ],
+  "class_names": [
+    "accessories",
+    "bags",
+    "clothing",
+    "footwear"
+  ],
+  "test_samples": 6283,
+  "accuracy": 0.9777176508037562,
+  "macro_precision": 0.9603581884603066,
+  "macro_recall": 0.9736476793240948,
+  "macro_f1": 0.9666609978155078,
+  "weighted_precision": 0.9781866031906117,
+  "weighted_recall": 0.9777176508037562,
+  "weighted_f1": 0.9778447799091928,
+  "classes": {
+    "accessories": {
+      "precision": 0.9574468085106383,
+      "recall": 0.948905109489051,
+      "f1": 0.9531568228105907,
+      "support": 1233,
+      "percentage": 0.19624383256406175
+    },
+    "bags": {
+      "precision": 0.8987854251012146,
+      "recall": 0.9694323144104804,
+      "f1": 0.9327731092436975,
+      "support": 458,
+      "percentage": 0.07289511379914054
+    },
+    "clothing": {
+      "precision": 0.9902729839974898,
+      "recall": 0.9834839513867248,
+      "f1": 0.9868667917448405,
+      "support": 3209,
+      "percentage": 0.5107432755053318
+    },
+    "footwear": {
+      "precision": 0.994927536231884,
+      "recall": 0.9927693420101229,
+      "f1": 0.9938472674629026,
+      "support": 1383,
+      "percentage": 0.22011777813146585
+    }
+  },
+  "confusion_matrix": [
+    [
+      1170,
+      34,
+      23,
+      6
+    ],
+    [
+      7,
+      444,
+      6,
+      1
+    ],
+    [
+      40,
+      13,
+      3156,
+      0
+    ],
+    [
+      5,
+      3,
+      2,
+      1373
+    ]
+  ],
+  "classification_report": {
+    "accessories": {
+      "precision": 0.9574468085106383,
+      "recall": 0.948905109489051,
+      "f1-score": 0.9531568228105907,
+      "support": 1233.0
+    },
+    "bags": {
+      "precision": 0.8987854251012146,
+      "recall": 0.9694323144104804,
+      "f1-score": 0.9327731092436975,
+      "support": 458.0
+    },
+    "clothing": {
+      "precision": 0.9902729839974898,
+      "recall": 0.9834839513867248,
+      "f1-score": 0.9868667917448405,
+      "support": 3209.0
+    },
+    "footwear": {
+      "precision": 0.994927536231884,
+      "recall": 0.9927693420101229,
+      "f1-score": 0.9938472674629026,
+      "support": 1383.0
+    },
+    "accuracy": 0.9777176508037562,
+    "macro avg": {
+      "precision": 0.9603581884603066,
+      "recall": 0.9736476793240948,
+      "f1-score": 0.9666609978155078,
+      "support": 6283.0
+    },
+    "weighted avg": {
+      "precision": 0.9781866031906117,
+      "recall": 0.9777176508037562,
+      "f1-score": 0.9778447799091928,
+      "support": 6283.0
+    }
+  },
+  "confidence_buckets": [
+    {
+      "confidence_bucket": "0.0 - 0.5",
+      "sample_count": 17,
+      "accuracy": 0.29411764705882354
+    },
+    {
+      "confidence_bucket": "0.5 - 0.6",
+      "sample_count": 69,
+      "accuracy": 0.5507246376811594
+    },
+    {
+      "confidence_bucket": "0.6 - 0.7",
+      "sample_count": 71,
+      "accuracy": 0.5633802816901409
+    },
+    {
+      "confidence_bucket": "0.7 - 0.8",
+      "sample_count": 92,
+      "accuracy": 0.8043478260869565
+    },
+    {
+      "confidence_bucket": "0.8 - 0.9",
+      "sample_count": 169,
+      "accuracy": 0.893491124260355
+    },
+    {
+      "confidence_bucket": "0.9 - 1.0",
+      "sample_count": 5865,
+      "accuracy": 0.9948849104859335
+    }
+  ],
+  "high_confidence_errors": [
+    {
+      "filename": "accessories/20497.jpg",
+      "true_class": "accessories",
+      "predicted_class": "bags",
+      "confidence": 0.9992870688438416,
+      "correct": false
+    },
+    {
+      "filename": "bags/6125.jpg",
+      "true_class": "bags",
+      "predicted_class": "clothing",
+      "confidence": 0.9990574717521667,
+      "correct": false
+    },
+    {
+      "filename": "accessories/59903.jpg",
+      "true_class": "accessories",
+      "predicted_class": "clothing",
+      "confidence": 0.9990265369415283,
+      "correct": false
+    },
+    {
+      "filename": "accessories/23478.jpg",
+      "true_class": "accessories",
+      "predicted_class": "clothing",
+      "confidence": 0.9988530874252319,
+      "correct": false
+    },
+    {
+      "filename": "footwear/24459.jpg",
+      "true_class": "footwear",
+      "predicted_class": "clothing",
+      "confidence": 0.9983637928962708,
+      "correct": false
+    },
+    {
+      "filename": "clothing/27436.jpg",
+      "true_class": "clothing",
+      "predicted_class": "bags",
+      "confidence": 0.9973884224891663,
+      "correct": false
+    },
+    {
+      "filename": "accessories/35027.jpg",
+      "true_class": "accessories",
+      "predicted_class": "clothing",
+      "confidence": 0.9959195852279663,
+      "correct": false
+    },
+    {
+      "filename": "accessories/39527.jpg",
+      "true_class": "accessories",
+      "predicted_class": "bags",
+      "confidence": 0.9929333925247192,
+      "correct": false
+    },
+    {
+      "filename": "accessories/40122.jpg",
+      "true_class": "accessories",
+      "predicted_class": "footwear",
+      "confidence": 0.9866424798965454,
+      "correct": false
+    },
+    {
+      "filename": "accessories/18566.jpg",
+      "true_class": "accessories",
+      "predicted_class": "bags",
+      "confidence": 0.9856528043746948,
+      "correct": false
+    },
+    {
+      "filename": "bags/42849.jpg",
+      "true_class": "bags",
+      "predicted_class": "accessories",
+      "confidence": 0.9774066209793091,
+      "correct": false
+    },
+    {
+      "filename": "clothing/27198.jpg",
+      "true_class": "clothing",
+      "predicted_class": "bags",
+      "confidence": 0.9712119102478027,
+      "correct": false
+    },
+    {
+      "filename": "accessories/14890.jpg",
+      "true_class": "accessories",
+      "predicted_class": "bags",
+      "confidence": 0.9681367874145508,
+      "correct": false
+    },
+    {
+      "filename": "accessories/19741.jpg",
+      "true_class": "accessories",
+      "predicted_class": "bags",
+      "confidence": 0.9678635597229004,
+      "correct": false
+    },
+    {
+      "filename": "accessories/35008.jpg",
+      "true_class": "accessories",
+      "predicted_class": "clothing",
+      "confidence": 0.9676674008369446,
+      "correct": false
+    },
+    {
+      "filename": "accessories/48562.jpg",
+      "true_class": "accessories",
+      "predicted_class": "footwear",
+      "confidence": 0.9660167098045349,
+      "correct": false
+    },
+    {
+      "filename": "accessories/13721.jpg",
+      "true_class": "accessories",
+      "predicted_class": "clothing",
+      "confidence": 0.9608949422836304,
+      "correct": false
+    },
+    {
+      "filename": "clothing/9827.jpg",
+      "true_class": "clothing",
+      "predicted_class": "accessories",
+      "confidence": 0.9487653970718384,
+      "correct": false
+    },
+    {
+      "filename": "accessories/47668.jpg",
+      "true_class": "accessories",
+      "predicted_class": "clothing",
+      "confidence": 0.9447755217552185,
+      "correct": false
+    },
+    {
+      "filename": "accessories/18026.jpg",
+      "true_class": "accessories",
+      "predicted_class": "bags",
+      "confidence": 0.9432320594787598,
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+import AttributeCard from './AttributeCard'
+export default function AttributeGrid({ analysis }) { const excluded = new Set(['category', 'subcategory', 'gender', 'description', 'keywords']); const fields = Object.entries(analysis || {}).filter(([key, value]) => !excluded.has(key) && value && typeof value === 'object' && !Array.isArray(value)); return <div className="grid gap-3 sm:grid-cols-2">{fields.map(([key, value]) => <AttributeCard key={key} label={key.replace(/_/g, ' ')} data={value} />)}</div> }

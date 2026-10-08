@@ -1,0 +1,1 @@
+export default function UploadZone({ children, onDrop }) { return <div onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); onDrop?.(event.dataTransfer.files) }}>{children}</div> }

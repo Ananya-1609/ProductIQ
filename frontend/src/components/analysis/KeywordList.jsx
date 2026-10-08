@@ -1,0 +1,5 @@
+import { Copy, Check } from 'lucide-react'
+import { useState } from 'react'
+import Card from '../common/Card'
+import { useLanguage } from '../../context/useLanguage'
+export default function KeywordList({ keywords = [] }) { const { t } = useLanguage(); const [copied, setCopied] = useState(false); async function copy() { await navigator.clipboard?.writeText(keywords.join(', ')); setCopied(true); setTimeout(() => setCopied(false), 1600) } return <Card className="p-5"><div className="flex items-center justify-between"><h3 className="font-semibold text-slate-950">{t('common.keywords')}</h3><button type="button" onClick={copy} className="inline-flex items-center gap-1.5 text-xs font-semibold text-teal-700">{copied ? <Check size={14} /> : <Copy size={14} />} {copied ? t('common.copied') : t('common.copyAll')}</button></div>{keywords.length ? <div className="mt-4 flex flex-wrap gap-2">{keywords.map((keyword) => <span key={keyword} className="rounded-full bg-teal-50 px-3 py-1.5 text-xs font-semibold text-teal-800">{keyword}</span>)}</div> : <p className="mt-3 text-sm text-slate-500">{t('common.noKeywords')}</p>}</Card> }

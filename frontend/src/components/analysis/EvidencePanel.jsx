@@ -1,0 +1,4 @@
+import { ChevronDown, Info } from 'lucide-react'
+import { useState } from 'react'
+import { useLanguage } from '../../context/useLanguage'
+export default function EvidencePanel({ evidence }) { const { t } = useLanguage(); const [open, setOpen] = useState(false); if (!evidence) return null; return <div className="mt-4 border-t border-slate-100 pt-3"><button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="flex w-full items-center justify-between text-left text-xs font-semibold text-slate-500"><span className="inline-flex items-center gap-1.5"><Info size={14} aria-hidden="true" />{t('review.whyAi')}</span><ChevronDown size={15} aria-hidden="true" className={`transition ${open ? 'rotate-180' : ''}`} /></button>{open && <p className="evidence-content mt-3 rounded-xl bg-slate-50 p-3 text-sm leading-6 text-slate-600">{evidence}</p>}</div> }
